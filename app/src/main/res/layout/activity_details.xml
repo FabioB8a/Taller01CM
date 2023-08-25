@@ -9,9 +9,128 @@
 
     <ImageView
         android:id="@+id/imageFlag"
-        android:layout_width="265dp"
-        android:layout_height="194dp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="56dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre país"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="276dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFlag"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/countryNativeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre nativo país"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryName"
+        />
+
+    <TextView
+        android:id="@+id/subRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subregion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryNativeName"
+        />
+
+    <TextView
+        android:id="@+id/alpha3Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha 3 code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/subRegion"/>
+
+    <TextView
+        android:id="@+id/alpha2Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha 2 code"
+        app:layout_constraintStart_toEndOf="@id/alpha3Code"
+        app:layout_constraintTop_toBottomOf="@id/subRegion"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/currencyCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/alpha3Code"
+        />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency"
+        app:layout_constraintStart_toEndOf="@id/currencyCode"
+        app:layout_constraintTop_toBottomOf="@id/alpha3Code"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/currency"/>
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/latitude" />
+
+    <TextView
+        android:id="@+id/nativeLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nativeLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/longitude" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/nativeLanguage" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

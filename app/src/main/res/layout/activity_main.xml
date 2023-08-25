@@ -21,8 +21,8 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="326dp"
-        android:layout_height="43dp"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
         android:entries="@array/countries"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -50,7 +50,7 @@ class CountriesListActivity: AppCompatActivity() {
 
                     val currencyName: String = countriesJSON.getJSONObject(i).getString("CurrencyName")
                     val currencySymbol: String = countriesJSON.getJSONObject(i).getString("CurrencySymbol")
-                    val currency: String = currencyName + "(" + currencySymbol + ")"
+                    val currency: String = currencyName + " (" + currencySymbol + ")"
 
                     val subRegion: String = countriesJSON.getJSONObject(i).getString("SubRegion")
                     val latitude: String = countriesJSON.getJSONObject(i).getString("Latitude")
