@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Countries app</string>
+    <string name="region_selected">You chose: %1$s</string>
+    <string name="mainbutton">MainButton</string>
+    <array name="countries">
+        <item>Africa</item>
+        <item>Americas</item>
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>Oceania</item>
+    </array>
+</resources>
