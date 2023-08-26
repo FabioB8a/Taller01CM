@@ -6,6 +6,9 @@
     <string name="native_language">Native Language: %1$s</string>
     <string name="area">Area: %1$s</string>
     <string name="fButton">Description: Floating Button with Intent - CallingPhone</string>
+    <string name="list_the_countries">List the countries</string>
+    <string name="select_a_region">Select a Region:</string>
+    <string name="the_countries_app">THE COUNTRIES APP</string>
     <array name="countries">
         <item>Africa</item>
         <item>Americas</item>

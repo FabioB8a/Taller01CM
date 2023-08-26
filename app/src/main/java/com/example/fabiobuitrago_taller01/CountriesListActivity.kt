@@ -13,6 +13,7 @@ import java.io.IOException
 /**
  *  Coded by: Fabio Luis Buitrago Ochoa
  */
+
 class CountriesListActivity: AppCompatActivity() {
 
     // View binding instance for the activity's layout

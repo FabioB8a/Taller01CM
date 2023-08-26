@@ -8,6 +8,7 @@ import com.example.fabiobuitrago_taller01.databinding.ActivityMainBinding
 /**
  *  Coded by: Fabio Luis Buitrago Ochoa
  */
+
 class MainActivity : AppCompatActivity() {
 
     // View binding instance for the main activity's layout

@@ -48,7 +48,7 @@ class CountryDetailActivity : AppCompatActivity() {
             binding.countryName.text = country.name
             binding.countryNativeName.text = country.nativeName
             binding.subRegion.text = country.subRegion
-            binding.alpha3Code.text = resources.getString(R.string.details_latitude, country.latitude)
+            binding.alpha3Code.text = country.code
 
             binding.alpha2Code.text = country.alpha2Code
             binding.currencyCode.text = country.currencyCode

@@ -43,6 +43,7 @@
                     android:layout_marginBottom="2dp"
                     android:text="Nombre País"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_bold"
                     android:textSize="15sp"/>
                 <TextView
                     android:id="@+id/nativenameCountry"
@@ -51,6 +52,7 @@
                     android:layout_marginBottom="2dp"
                     android:text="Nombre Nativo País"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_regular"
                     android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/codeCountry"
@@ -59,6 +61,7 @@
                     android:layout_marginBottom="2dp"
                     android:text="Código país"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_regular"
                     android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/currency"
@@ -67,6 +70,7 @@
                     android:layout_marginBottom="2dp"
                     android:text="Moneda"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_regular"
                     android:textSize="12sp"/>
 
             </LinearLayout>
