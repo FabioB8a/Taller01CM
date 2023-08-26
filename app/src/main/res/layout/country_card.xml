@@ -78,7 +78,7 @@
                 android:layout_marginEnd="6dp"
                 android:layout_alignParentEnd="true"
                 app:srcCompat="@drawable/phone"
-                android:contentDescription="@string/mainbutton" />
+                android:contentDescription="@string/fButton" />
         </RelativeLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

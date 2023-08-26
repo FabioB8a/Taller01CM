@@ -3,7 +3,9 @@ package com.example.fabiobuitrago_taller01;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.annotation.NonNull;
+/**
+ *  Coded by: Fabio Luis Buitrago Ochoa
+ */
 
 public class Country implements Parcelable {
     private String name;
@@ -21,6 +23,23 @@ public class Country implements Parcelable {
     private String alpha2Code;
     private String currencyCode;
 
+    /**
+     * Constructor to create a new Country object with provided details.
+     *
+     * @param name The name of the country.
+     * @param nativeName The native name of the country.
+     * @param code The alpha-3 code of the country.
+     * @param currency The currency information of the country.
+     * @param urlImage The URL of the country's flag image.
+     * @param numericCode The numeric code of the country.
+     * @param subRegion The subregion to which the country belongs.
+     * @param latitude The latitude coordinate of the country.
+     * @param longitude The longitude coordinate of the country.
+     * @param nativeLanguage The native language spoken in the country.
+     * @param area The area of the country.
+     * @param alpha2Code The alpha-2 code of the country.
+     * @param currencyCode The currency code of the country.
+     */
     public Country(String name, String nativeName, String code, String currency, String urlImage, String numericCode, String subRegion, String latitude, String longitude, String nativeLanguage, String area, String alpha2Code, String currencyCode) {
         this.name = name;
         this.nativeName = nativeName;
@@ -37,6 +56,11 @@ public class Country implements Parcelable {
         this.currencyCode = currencyCode;
     }
 
+    /**
+     * Parcelable constructor to create a Country object from a Parcel.
+     *
+     * @param in The Parcel containing the data to construct the Country object.
+     */
     protected Country(Parcel in) {
         name = in.readString();
         nativeName = in.readString();
@@ -157,11 +181,22 @@ public class Country implements Parcelable {
         this.currencyCode = currencyCode;
     }
 
-    @Override
+
+    /**
+     * Describe the kinds of special objects contained in this Parcelable instance's marshaled representation.
+     *
+     * @return A bitmask indicating the set of special object types marshaled by this Parcelable object instance.
+     */@Override
     public int describeContents() {
-        return 0;
+        return 0; // The implementation does not have any special objects, so 0 is returned.
     }
 
+    /**
+     * Write the object's data to the passed-in Parcel.
+     *
+     * @param dest  The Parcel to which the object's data should be written.
+     * @param flags Flags indicating how the object should be written. This value is not used in the current implementation.
+     */
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
@@ -178,11 +213,28 @@ public class Country implements Parcelable {
         dest.writeString(alpha2Code);
         dest.writeString(currencyCode);
     }
+
+    /**
+     * A Creator implementation for generating instances of Country from a Parcel.
+     */
     public static final Parcelable.Creator<Country> CREATOR = new Parcelable.Creator<Country>() {
+
+        /**
+         * Create a new instance of the Parcelable class, instantiating it from the given Parcel.
+         *
+         * @param in The Parcel from which to re-create the Parcelable instance.
+         * @return The newly created Country instance.
+         */
         public Country createFromParcel(Parcel in) {
             return new Country(in);
         }
 
+        /**
+         * Create a new array of the Parcelable class.
+         *
+         * @param size The size of the array.
+         * @return The new array of Country instances.
+         */
         public Country[] newArray(int size) {
             return new Country[size];
         }

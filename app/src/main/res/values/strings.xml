@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Countries app</string>
     <string name="region_selected">You chose: %1$s</string>
-    <string name="mainbutton">MainButton</string>
+    <string name="details_longitude">Longitude: %1$s</string>
+    <string name="details_latitude">Latitude: %1$s</string>
+    <string name="native_language">Native Language: %1$s</string>
+    <string name="area">Area: %1$s</string>
+    <string name="fButton">Description: Floating Button with Intent - CallingPhone</string>
     <array name="countries">
         <item>Africa</item>
         <item>Americas</item>
